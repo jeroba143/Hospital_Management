@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('img3.jpg') no-repeat center center fixed; /* Apply background image */
+        background-size: cover; /* Ensure the image covers the entire screen */
+    }
+
+    /* Center the page content */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3); /* Adding overlay to make text more readable */
+        backdrop-filter: blur(5px);
+    }
+
+    .contact-box {
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        max-width: 700px;
+        width: 100%;
+        border-top: 5px solid #4CAF50;
+		 background: rgba(0, 0, 0, 0.3); /* Adding overlay to make text more readable */
+        backdrop-filter: blur(5px);
+    }
+
+    .contact-box h1 {
+        font-size: 2.5rem;
+        color: yellow;
+        margin-bottom: 20px;
+    }
+
+    .contact-box p {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin: 10px 0;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        background-color: #4CAF50;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-info a:hover {
+        background-color: #45a049;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+    }
+
+    .contact-details {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .contact-details p {
+        margin: 12px 0;
+    }
+
+    .contact-details i {
+        color: #4CAF50;
+        margin-right: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-media a {
+        margin: 0 15px;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .social-media a:hover {
+        color: #4CAF50;
+    }
+
+    /* Style for form-like input and section */
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        background-color: #f4f7fc;
+        transition: border 0.3s ease;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+        border: 2px solid #4CAF50;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #45a049;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contact-box {
+            padding: 25px;
+        }
+
+        .contact-info a {
+            width: 90%;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Feel free to reach out to us with any questions, feedback, or concerns.</p>
+
+            <div class="contact-info">
+                <!-- Link to open Gmail compose page directly -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=djeroba4@gmail.com&su=Contact%20Us%20Inquiry" target="_blank">
+                    <i class="fas fa-envelope"></i> Send us an Email
+                </a>
+            </div>
+
+            <div class="contact-details">
+                <p><strong>Our Contact Details:</strong></p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +1 234 567 890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 Company St, City, Country</p>
+                <p><i class="fas fa-clock"></i> Office Hours: Mon-Fri, 9 AM - 6 PM</p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

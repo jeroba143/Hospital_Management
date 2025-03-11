@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 4%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+        }
+
+        .cancel-btn:hover {
+            background-color: #e53935;
+        }
+
+        #confirmationMessage {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #confirmationMessage h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form id="bookingForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="dr_john">Dr. John Smith</option>
+                <option value="dr_susan">Dr. Susan Lee</option>
+                <option value="dr_ali">Dr. Ali Khan</option>
+            </select>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Appointment Time:</label>
+            <select id="appointmentTime" name="appointmentTime" required>
+                <option value="9:00am">9:00 AM</option>
+                <option value="10:00am">10:00 AM</option>
+                <option value="11:00am">11:00 AM</option>
+                <option value="1:00pm">1:00 PM</option>
+                <option value="2:00pm">2:00 PM</option>
+            </select>
+
+            <div>
+                <button type="submit">Book Appointment</button>
+                <button type="button" class="cancel-btn" id="cancelButton">Cancel Appointment</button>
+            </div>
+        </form>
+
+        <div id="confirmationMessage" style="display: none;">
+            <h2>Appointment Confirmed!</h2>
+            <p>Your appointment has been booked successfully. Thank you for choosing our healthcare service.</p>
+        </div>
+    </div>
+</body>
+</html>

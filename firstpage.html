@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏥 St. John de Britto Hospital</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: black;
+        position: relative;
+        overflow-x: hidden;
+        height: 100%;
+      }
+
+      /* Ensure body is scrollable */
+      html, body {
+        height: 100%;
+      }
+
+      /* Main Content */
+      .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 120px auto;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      h2 {
+        color: yellow;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: yellow;
+        margin-bottom: 30px;
+	    font-size:70px;
+		bold:50PX;
+		
+		margin-top:-30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn:hover {
+        background: #ffeb3b;
+        color: black;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+      }
+
+      .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar li {
+        padding: 10px 20px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .navbar a:hover {
+        color: #ffeb3b;
+      }
+
+      /* Home Section with background image */
+     #home {
+    display: block;
+    padding-top: 60px; /* Adjust for navbar height */
+    background-image: url('img9.jpg'); /* Apply background image to the home section */
+    background-size: cover; /* Ensure it covers the section */
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed while content scrolls */
+    color: white;
+    min-height: 100vh; /* Ensure the section takes at least the full height of the viewport */
+    padding-bottom: 20px; /* Optional: Add padding at the bottom */
+    position: relative;
+  }
+
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+  }
+
+      .section-content {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+      }
+
+      .card {
+        display: inline-block;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .card h3 {
+        color: yellow;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: white;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <ul>
+        <li><a href="#" onclick="showHome()">🏠 Home</a></li>
+        <li><a href="patient_register.php">👩‍⚕️ Patient Register</a></li>
+        <li><a href="patient_login.php">👩‍⚕️ Patient Login</a></li>
+        <li><a href="doctor_login.php">👨‍⚕️ Doctor Login</a></li>
+        <li><a href="admin11.php">👨‍💼 Admin Login</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </div>
+    <!-- Home Section -->
+    <div id="home" class="section">
+      <div class="container">
+        <h1>🏥 ST. JOHN DE BRITTO HOSPITAL</h1>
+        <header>
+          <h3>Welcome to Our Hospital</h3>
+          <p>Your health is our priority</p>
+        </header>
+
+        <div class="container">
+          <h2>Providing Quality Healthcare</h2>
+          <p>We offer top-notch medical services with experienced professionals.</p>
+          <div class="content">
+            <img src="hospital_building.jpg" alt="Hospital Building">
+            <h3 style=color:yellow;>About Our Hospital</h3>
+            <p>Our hospital has been serving the community for over 50 years. We provide advanced medical care, state-of-the-art facilities, and a compassionate team dedicated to your well-being.</p>
+            <h3 style=color:yellow;>Our Services</h3>
+            <img src="medical_services.jpg" alt="Medical Services">
+            <p>We offer a wide range of medical services, including emergency care, surgery, maternity care, pediatrics, cardiology, neurology, orthopedics, and more. Our dedicated professionals ensure that you receive the best treatment available.</p>
+            <h3 style=color:yellow;>Our Departments</h3>
+            
+              <li>Emergency Medicine</li>
+              <li>Cardiology</li>
+              <li>Neurology</li>
+              <li>Orthopedics</li>
+              <li>Pediatrics</li>
+              <li>Oncology</li>
+              <li>Gynecology</li>
+              <li>Radiology</li>
+            
+            <h3 style=color:yellow;>Meet Our Doctors</h3>
+            <img src="doctors_team.jpg" alt="Doctors Team">
+            <p>Our team consists of highly skilled doctors, nurses, and medical staff who are committed to providing excellent healthcare services. With years of experience, they bring expert care to our patients.</p>
+            <h3 style=color:yellow;>Book an Appointment</h3>
+            <p>Need to see a doctor? Book an appointment online or call us at (123) 456-7890. We ensure timely and professional consultation for all patients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 St. John de Britto Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Function to show the Home section
+      function showHome() {
+        const homeSection = document.getElementById('home');
+        // Ensure the home section is visible
+        homeSection.style.display = 'block';
+      }
+
+      // Show the Home section by default when the page loads
+      window.onload = () => {
+        showHome();
+      };
+    </script>
+  </body>
+</html>

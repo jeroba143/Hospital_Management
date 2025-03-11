@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 Share Your Feedback!</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        text-align: center;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: #ffeb3b;
+        color: #000;
+        border-radius: 5px;
+      }
+
+      /* Feedback Container */
+      .container {
+        width: 90%;
+        max-width: 600px;
+        margin: 120px auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .container:hover {
+        transform: scale(1.02);
+      }
+
+      h2 {
+        color: #007bff;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, transform 0.2s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      /* Footer */
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <a href="project.html">🏠 Home</a>
+      <a href="about.html">📖 About Us</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="feedback.html">📝 Feedback</a>
+      <a href="deatils.html">🛍️ More Details</a>
+    </div>
+
+    <div class="container">
+      <h2>📝 Share Your Feedback!</h2>
+      <p>We value your opinion! Please share your experience with us. 🌟</p>
+      <form action="#" method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="👤 Enter Your Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="📧 Enter Your Email"
+          required
+        />
+        <select name="rating" required>
+          <option value="">🌟 How was your experience?</option>
+          <option value="5">😍 Amazing (⭐⭐⭐⭐⭐)</option>
+          <option value="4">😊 Very Good (⭐⭐⭐⭐)</option>
+          <option value="3">😐 Okay (⭐⭐⭐)</option>
+          <option value="2">😕 Not Great (⭐⭐)</option>
+          <option value="1">😡 Terrible (⭐)</option>
+        </select>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="💬 Your Valuable Feedback..."
+          required
+        ></textarea>
+        <button type="submit">🚀 Submit Feedback</button>
+      </form>
+    </div>
+
+    <p class="footer">© 2025 PureDrop | Hydration at its Best! 💙</p>
+  </body>
+</html>

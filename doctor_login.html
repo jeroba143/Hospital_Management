@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Login - Water Bottle Shop</title>
+  <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #2193b0, #6dd5ed); /* Beautiful Gradient */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background:url("doctor_photo.jpg");
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      color: #007BFF;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #007BFF;
+    }
+
+    /* Password Eye Icon */
+    .eye-icon {
+      position: absolute;
+      right: 15px;
+      top: 42px;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .eye-icon:hover {
+      color: #007BFF;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .signup-link {
+      display: block;
+      margin-top: 15px;
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .signup-link:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h1>🔐 Welcome Back!</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="email">📧 Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">🔑 Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <span class="eye-icon" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <button type="submit">🚀 Login</button>
+    </form>
+
+    <p>❓ Forgot your password? <a href="reset.html" class="signup-link">Reset here</a></p>
+    <p>🆕 Don't have an account? <a href="signup.html" class="signup-link">Sign up</a></p>
+  </div>
+
+  <script>
+    function togglePassword() {
+      let passwordField = document.getElementById("password");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+      } else {
+        passwordField.type = "password";
+      }
+    }
+  </script>
+
+</body>
+</html>
